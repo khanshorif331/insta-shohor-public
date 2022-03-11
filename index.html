@@ -74,10 +74,55 @@
             </div>
 
             <div id="reported">
-                <h1 id="reported-posts">Reported posts</h1>
+                <h1>Reported posts</h1>
             </div>
         </main>
+        <!-- Question and answer section -->
+        <section id="bonus-part" class="container my-5" >
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      How does Javascript works on browser???
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        When we try to open a website in a browser,it does the work in some steps.First it converts the whole website in to a dom tree and style tree for css.Then it creats render tree.Then comes the js engine and this engine is named differently in defferent browsers.The javascript engine takes the human readable js code and converts it into machine readable code so that computer can understand our instuctions.And finally we can see the whole website in ui.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      What does javascript event loop do???
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We know that,javascript is an interpreted ,high-level language.It runs the code line by line.But in the code ,sometimes it finds the code which is not necessary now.So it keeps those codes or function in a queue list.So when all the stacks are done,then it starts to run the code from the queue and creats an event loop.Setinterval and setTimeout are the best exaple of this thing.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      What is the difference between local storage and session storage???
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Local storage:Local storage is available permanently.It doesn't remove automatically.We can remove this manually.If we close the browser or tab,and then come back still the local storage data will be stored there. <br>
+                        Session storage:Session storage is only available for the duration of browser session.When the browser or the tab is closed,session storage is gone automatically.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
         <footer></footer>
+
+        <!-- bootstrap js files here -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>

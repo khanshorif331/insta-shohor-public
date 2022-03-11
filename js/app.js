@@ -27,7 +27,6 @@ const reportPost = (id) => {
     console.log(remainingPosts);
     showPosts(remainingPosts);
     console.log(showPosts(remainingPosts));
-    // displayReportedPosts()
 };
 
 const displayContent = (text) => {
@@ -39,26 +38,26 @@ const switchTab = (id) => {
         document.getElementById( "posts" ).style.display = "grid";
         document.getElementById( "liked" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
-    } else if (id === "liked") {
+        document.getElementById( "bonus-part" ).style.display = "grid";
+    } 
+      else if (id === "liked") {
         document.getElementById( "liked" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
+        document.getElementById( "bonus-part" ).style.display = "none";
 
         displayLikedPosts();
     } else {
-      // document.getElementById( "reported" ).innerHTML = ''
         document.getElementById( "reported" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
         document.getElementById( "liked" ).style.display = "none";
-        // document.getElementById( "reported" ).innerHTML = ''
-  // document.getElementById('reported-posts').style.display='block'
+        document.getElementById( "bonus-part" ).style.display = "none";
 
         displayReportedPosts();
     }
 };
 
 const createPost = (post) => {
-  // console.log(post.comments);
     const image = post.image;
     const div = document.createElement( "article" );
     div.classList.add( "post" );
